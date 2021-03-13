@@ -13,7 +13,7 @@ const personalMovieDB = {
 let movie = [];
 let mark = [];
 for (let i = 0; i < 2; i++){
-    while (!movie[i] || movie[i].length > 50){
+    while (!movie[i] || movie[i].length > 50 || movie[i] == null){
         movie[i] = prompt('Name of the movie');
     }
     mark[i] = prompt('Rate this movie');
